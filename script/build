@@ -1,3 +1,4 @@
 #!/bin/bash
 bun build ./src/index.tsx --outdir dist
 cp ./public/* ./dist
+bun run deploy

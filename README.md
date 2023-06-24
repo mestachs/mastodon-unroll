@@ -1,25 +1,25 @@
-# React Bun App
+# Mastodon thread unroll
 
-This is a single-page application project template using React and [Bun](https://bun.sh/). Run the following commands to get started.
+Turn a mastodon thread into markdown content... 
+So I can use it as blog draft article.
 
-```sh
-bun create react ./react-bun-app
-cd react-bun-app
+Want to test it ? https://mestachs.github.io/mastodon-unroll/
+
+Also an occasion to try the new bun.sh bundler, react, gh-pages as an alternative deploy/dev workflow.
+
+
+todos 
+ - don't know why the hot reload doesn't seem to work
+ - add options to filter out content from other person in the thread
+ 
+## dev
+
 ```
-
-The `bun create` command will automatically install the required dependencies. To start the dev server:
-
-```sh
 bun run dev
 ```
 
-Then open http://localhost:3000 with your browser to see the result.
 
-This bundles `src/index.tsx` and starts a development server that serves from the `public` and `build` directories. When the incoming request to `localhost:3000/` comes in, the following exchange occurs:
-
-- The Bun server returns `public/index.html`.
-- The browser renders this HTML, which contains a `script` tags with `src="/index.js"`. The browser requests this file.
-- The server checks for this file, first in `public` (no match) then in `build`. It finds `build/index.js` and returns it to the browser.
-- This file renders the React component in `src/App.tsx` inside the `div#root` element. The app is now ready to accept user input.
-
-Start building your app by editing `src/App.tsx`.
+## deploy to github pages
+```
+./script/build
+```
