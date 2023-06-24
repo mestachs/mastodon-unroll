@@ -36750,9 +36750,6 @@ var reportWebVitals_default = reportWebVitals;
 var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 var root4 = $createRoot2(document.getElementById("root"));
 root4.render(jsx_dev_runtime2.jsxDEV(React5.StrictMode, {
-  children: [
-    jsx_dev_runtime2.jsxDEV(App_default, {}, undefined, false, undefined, this),
-    ","
-  ]
-}, undefined, true, undefined, this));
+  children: jsx_dev_runtime2.jsxDEV(App_default, {}, undefined, false, undefined, this)
+}, undefined, false, undefined, this));
 reportWebVitals_default();
