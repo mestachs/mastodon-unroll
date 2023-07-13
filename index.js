@@ -27,186 +27,7 @@ var __export = (target, all) => {
 var __esm = (fn, res) => () => (fn && (res = fn(fn = 0)), res);
 
 // node_modules/react/cjs/react.development.js
-var exports_react_development = {};
-__export(exports_react_development, {
-  version: () => {
-    {
-      return $version;
-    }
-  },
-  useTransition: () => {
-    {
-      return $useTransition;
-    }
-  },
-  useSyncExternalStore: () => {
-    {
-      return $useSyncExternalStore;
-    }
-  },
-  useState: () => {
-    {
-      return $useState;
-    }
-  },
-  useRef: () => {
-    {
-      return $useRef;
-    }
-  },
-  useReducer: () => {
-    {
-      return $useReducer;
-    }
-  },
-  useMemo: () => {
-    {
-      return $useMemo;
-    }
-  },
-  useLayoutEffect: () => {
-    {
-      return $useLayoutEffect;
-    }
-  },
-  useInsertionEffect: () => {
-    {
-      return $useInsertionEffect;
-    }
-  },
-  useImperativeHandle: () => {
-    {
-      return $useImperativeHandle;
-    }
-  },
-  useId: () => {
-    {
-      return $useId;
-    }
-  },
-  useEffect: () => {
-    {
-      return $useEffect;
-    }
-  },
-  useDeferredValue: () => {
-    {
-      return $useDeferredValue;
-    }
-  },
-  useDebugValue: () => {
-    {
-      return $useDebugValue;
-    }
-  },
-  useContext: () => {
-    {
-      return $useContext;
-    }
-  },
-  useCallback: () => {
-    {
-      return $useCallback;
-    }
-  },
-  unstable_act: () => {
-    {
-      return $unstable_act;
-    }
-  },
-  startTransition: () => {
-    {
-      return $startTransition;
-    }
-  },
-  memo: () => {
-    {
-      return $memo;
-    }
-  },
-  lazy: () => {
-    {
-      return $lazy;
-    }
-  },
-  isValidElement: () => {
-    {
-      return $isValidElement;
-    }
-  },
-  forwardRef: () => {
-    {
-      return $forwardRef;
-    }
-  },
-  createRef: () => {
-    {
-      return $createRef;
-    }
-  },
-  createFactory: () => {
-    {
-      return $createFactory;
-    }
-  },
-  createElement: () => {
-    {
-      return $createElement;
-    }
-  },
-  createContext: () => {
-    {
-      return $createContext;
-    }
-  },
-  cloneElement: () => {
-    {
-      return $cloneElement;
-    }
-  },
-  __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: () => {
-    {
-      return $__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    }
-  },
-  Suspense: () => {
-    {
-      return $Suspense;
-    }
-  },
-  StrictMode: () => {
-    {
-      return $StrictMode;
-    }
-  },
-  PureComponent: () => {
-    {
-      return $PureComponent;
-    }
-  },
-  Profiler: () => {
-    {
-      return $Profiler;
-    }
-  },
-  Fragment: () => {
-    {
-      return $Fragment;
-    }
-  },
-  Component: () => {
-    {
-      return $Component;
-    }
-  },
-  Children: () => {
-    {
-      return $Children;
-    }
-  }
-});
-var $Children, $Component, $Fragment, $Profiler, $PureComponent, $StrictMode, $Suspense, $__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED, $cloneElement, $createContext, $createElement, $createFactory, $createRef, $forwardRef, $isValidElement, $lazy, $memo, $startTransition, $unstable_act, $useCallback, $useContext, $useDebugValue, $useDeferredValue, $useEffect, $useId, $useImperativeHandle, $useInsertionEffect, $useLayoutEffect, $useMemo, $useReducer, $useRef, $useState, $useSyncExternalStore, $useTransition, $version;
-var init_react_development = __esm(() => {
+var require_react_development = __commonJS((exports, module) => {
   if (true) {
     (function() {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
@@ -1775,8 +1596,8 @@ var init_react_development = __esm(() => {
         if (enqueueTaskImpl === null) {
           try {
             var requireString = ("require" + Math.random()).slice(0, 7);
-            var nodeRequire = module_react_development && module_react_development[requireString];
-            enqueueTaskImpl = nodeRequire.call(module_react_development, "timers").setImmediate;
+            var nodeRequire = module && module[requireString];
+            enqueueTaskImpl = nodeRequire.call(module, "timers").setImmediate;
           } catch (_err) {
             enqueueTaskImpl = function(callback) {
               {
@@ -1947,41 +1768,41 @@ var init_react_development = __esm(() => {
         toArray,
         only: onlyChild
       };
-      $Children = Children;
-      $Component = Component;
-      $Fragment = REACT_FRAGMENT_TYPE;
-      $Profiler = REACT_PROFILER_TYPE;
-      $PureComponent = PureComponent;
-      $StrictMode = REACT_STRICT_MODE_TYPE;
-      $Suspense = REACT_SUSPENSE_TYPE;
-      $__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
-      $cloneElement = cloneElement$1;
-      $createContext = createContext;
-      $createElement = createElement$1;
-      $createFactory = createFactory;
-      $createRef = createRef;
-      $forwardRef = forwardRef;
-      $isValidElement = isValidElement;
-      $lazy = lazy;
-      $memo = memo;
-      $startTransition = startTransition;
-      $unstable_act = act;
-      $useCallback = useCallback;
-      $useContext = useContext;
-      $useDebugValue = useDebugValue;
-      $useDeferredValue = useDeferredValue;
-      $useEffect = useEffect;
-      $useId = useId;
-      $useImperativeHandle = useImperativeHandle;
-      $useInsertionEffect = useInsertionEffect;
-      $useLayoutEffect = useLayoutEffect;
-      $useMemo = useMemo;
-      $useReducer = useReducer;
-      $useRef = useRef;
-      $useState = useState;
-      $useSyncExternalStore = useSyncExternalStore;
-      $useTransition = useTransition;
-      $version = ReactVersion;
+      exports.Children = Children;
+      exports.Component = Component;
+      exports.Fragment = REACT_FRAGMENT_TYPE;
+      exports.Profiler = REACT_PROFILER_TYPE;
+      exports.PureComponent = PureComponent;
+      exports.StrictMode = REACT_STRICT_MODE_TYPE;
+      exports.Suspense = REACT_SUSPENSE_TYPE;
+      exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
+      exports.cloneElement = cloneElement$1;
+      exports.createContext = createContext;
+      exports.createElement = createElement$1;
+      exports.createFactory = createFactory;
+      exports.createRef = createRef;
+      exports.forwardRef = forwardRef;
+      exports.isValidElement = isValidElement;
+      exports.lazy = lazy;
+      exports.memo = memo;
+      exports.startTransition = startTransition;
+      exports.unstable_act = act;
+      exports.useCallback = useCallback;
+      exports.useContext = useContext;
+      exports.useDebugValue = useDebugValue;
+      exports.useDeferredValue = useDeferredValue;
+      exports.useEffect = useEffect;
+      exports.useId = useId;
+      exports.useImperativeHandle = useImperativeHandle;
+      exports.useInsertionEffect = useInsertionEffect;
+      exports.useLayoutEffect = useLayoutEffect;
+      exports.useMemo = useMemo;
+      exports.useReducer = useReducer;
+      exports.useRef = useRef;
+      exports.useState = useState;
+      exports.useSyncExternalStore = useSyncExternalStore;
+      exports.useTransition = useTransition;
+      exports.version = ReactVersion;
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
         __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error);
       }
@@ -1991,114 +1812,15 @@ var init_react_development = __esm(() => {
 
 // node_modules/react/index.js
 var require_react = __commonJS((exports, module) => {
-  init_react_development();
+  var react_development = __toESM(require_react_development(), 1);
   if (false) {
   } else {
-    module.exports = exports_react_development;
+    module.exports = react_development;
   }
 });
 
 // node_modules/scheduler/cjs/scheduler.development.js
-var exports_scheduler_development = {};
-__export(exports_scheduler_development, {
-  unstable_wrapCallback: () => {
-    {
-      return $unstable_wrapCallback;
-    }
-  },
-  unstable_shouldYield: () => {
-    {
-      return $unstable_shouldYield;
-    }
-  },
-  unstable_scheduleCallback: () => {
-    {
-      return $unstable_scheduleCallback;
-    }
-  },
-  unstable_runWithPriority: () => {
-    {
-      return $unstable_runWithPriority;
-    }
-  },
-  unstable_requestPaint: () => {
-    {
-      return $unstable_requestPaint;
-    }
-  },
-  unstable_pauseExecution: () => {
-    {
-      return $unstable_pauseExecution;
-    }
-  },
-  unstable_now: () => {
-    {
-      return $unstable_now;
-    }
-  },
-  unstable_next: () => {
-    {
-      return $unstable_next;
-    }
-  },
-  unstable_getFirstCallbackNode: () => {
-    {
-      return $unstable_getFirstCallbackNode;
-    }
-  },
-  unstable_getCurrentPriorityLevel: () => {
-    {
-      return $unstable_getCurrentPriorityLevel;
-    }
-  },
-  unstable_forceFrameRate: () => {
-    {
-      return $unstable_forceFrameRate;
-    }
-  },
-  unstable_continueExecution: () => {
-    {
-      return $unstable_continueExecution;
-    }
-  },
-  unstable_cancelCallback: () => {
-    {
-      return $unstable_cancelCallback;
-    }
-  },
-  unstable_UserBlockingPriority: () => {
-    {
-      return $unstable_UserBlockingPriority;
-    }
-  },
-  unstable_Profiling: () => {
-    {
-      return $unstable_Profiling;
-    }
-  },
-  unstable_NormalPriority: () => {
-    {
-      return $unstable_NormalPriority;
-    }
-  },
-  unstable_LowPriority: () => {
-    {
-      return $unstable_LowPriority;
-    }
-  },
-  unstable_ImmediatePriority: () => {
-    {
-      return $unstable_ImmediatePriority;
-    }
-  },
-  unstable_IdlePriority: () => {
-    {
-      return $unstable_IdlePriority;
-    }
-  }
-});
-var $unstable_now, $unstable_IdlePriority, $unstable_ImmediatePriority, $unstable_LowPriority, $unstable_NormalPriority, $unstable_Profiling, $unstable_UserBlockingPriority, $unstable_cancelCallback, $unstable_continueExecution, $unstable_forceFrameRate, $unstable_getCurrentPriorityLevel, $unstable_getFirstCallbackNode, $unstable_next, $unstable_pauseExecution, $unstable_requestPaint, $unstable_runWithPriority, $unstable_scheduleCallback, $unstable_shouldYield, $unstable_wrapCallback;
-var init_scheduler_development = __esm(() => {
+var require_scheduler_development = __commonJS((exports) => {
   if (true) {
     (function() {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
@@ -2183,13 +1905,13 @@ var init_scheduler_development = __esm(() => {
       var hasPerformanceNow = typeof performance === "object" && typeof performance.now === "function";
       if (hasPerformanceNow) {
         var localPerformance = performance;
-        $unstable_now = function() {
+        exports.unstable_now = function() {
           return localPerformance.now();
         };
       } else {
         var localDate = Date;
         var initialTime = localDate.now();
-        $unstable_now = function() {
+        exports.unstable_now = function() {
           return localDate.now() - initialTime;
         };
       }
@@ -2255,7 +1977,7 @@ var init_scheduler_development = __esm(() => {
               return workLoop(hasTimeRemaining, initialTime2);
             } catch (error) {
               if (currentTask !== null) {
-                var currentTime = $unstable_now();
+                var currentTime = exports.unstable_now();
                 markTaskErrored(currentTask, currentTime);
                 currentTask.isQueued = false;
               }
@@ -2284,7 +2006,7 @@ var init_scheduler_development = __esm(() => {
             currentPriorityLevel = currentTask.priorityLevel;
             var didUserCallbackTimeout = currentTask.expirationTime <= currentTime;
             var continuationCallback = callback(didUserCallbackTimeout);
-            currentTime = $unstable_now();
+            currentTime = exports.unstable_now();
             if (typeof continuationCallback === "function") {
               currentTask.callback = continuationCallback;
             } else {
@@ -2360,7 +2082,7 @@ var init_scheduler_development = __esm(() => {
         };
       }
       function unstable_scheduleCallback(priorityLevel, callback, options) {
-        var currentTime = $unstable_now();
+        var currentTime = exports.unstable_now();
         var startTime2;
         if (typeof options === "object" && options !== null) {
           var delay = options.delay;
@@ -2444,7 +2166,7 @@ var init_scheduler_development = __esm(() => {
       var frameInterval = frameYieldMs;
       var startTime = -1;
       function shouldYieldToHost() {
-        var timeElapsed = $unstable_now() - startTime;
+        var timeElapsed = exports.unstable_now() - startTime;
         if (timeElapsed < frameInterval) {
           return false;
         }
@@ -2465,7 +2187,7 @@ var init_scheduler_development = __esm(() => {
       }
       var performWorkUntilDeadline = function() {
         if (scheduledHostCallback !== null) {
-          var currentTime = $unstable_now();
+          var currentTime = exports.unstable_now();
           startTime = currentTime;
           var hasTimeRemaining = true;
           var hasMoreWork = true;
@@ -2509,7 +2231,7 @@ var init_scheduler_development = __esm(() => {
       }
       function requestHostTimeout(callback, ms) {
         taskTimeoutID = localSetTimeout(function() {
-          callback($unstable_now());
+          callback(exports.unstable_now());
         }, ms);
       }
       function cancelHostTimeout() {
@@ -2518,24 +2240,24 @@ var init_scheduler_development = __esm(() => {
       }
       var unstable_requestPaint = requestPaint;
       var unstable_Profiling = null;
-      $unstable_IdlePriority = IdlePriority;
-      $unstable_ImmediatePriority = ImmediatePriority;
-      $unstable_LowPriority = LowPriority;
-      $unstable_NormalPriority = NormalPriority;
-      $unstable_Profiling = unstable_Profiling;
-      $unstable_UserBlockingPriority = UserBlockingPriority;
-      $unstable_cancelCallback = unstable_cancelCallback;
-      $unstable_continueExecution = unstable_continueExecution;
-      $unstable_forceFrameRate = forceFrameRate;
-      $unstable_getCurrentPriorityLevel = unstable_getCurrentPriorityLevel;
-      $unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
-      $unstable_next = unstable_next;
-      $unstable_pauseExecution = unstable_pauseExecution;
-      $unstable_requestPaint = unstable_requestPaint;
-      $unstable_runWithPriority = unstable_runWithPriority;
-      $unstable_scheduleCallback = unstable_scheduleCallback;
-      $unstable_shouldYield = shouldYieldToHost;
-      $unstable_wrapCallback = unstable_wrapCallback;
+      exports.unstable_IdlePriority = IdlePriority;
+      exports.unstable_ImmediatePriority = ImmediatePriority;
+      exports.unstable_LowPriority = LowPriority;
+      exports.unstable_NormalPriority = NormalPriority;
+      exports.unstable_Profiling = unstable_Profiling;
+      exports.unstable_UserBlockingPriority = UserBlockingPriority;
+      exports.unstable_cancelCallback = unstable_cancelCallback;
+      exports.unstable_continueExecution = unstable_continueExecution;
+      exports.unstable_forceFrameRate = forceFrameRate;
+      exports.unstable_getCurrentPriorityLevel = unstable_getCurrentPriorityLevel;
+      exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
+      exports.unstable_next = unstable_next;
+      exports.unstable_pauseExecution = unstable_pauseExecution;
+      exports.unstable_requestPaint = unstable_requestPaint;
+      exports.unstable_runWithPriority = unstable_runWithPriority;
+      exports.unstable_scheduleCallback = unstable_scheduleCallback;
+      exports.unstable_shouldYield = shouldYieldToHost;
+      exports.unstable_wrapCallback = unstable_wrapCallback;
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
         __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error);
       }
@@ -2545,79 +2267,15 @@ var init_scheduler_development = __esm(() => {
 
 // node_modules/scheduler/index.js
 var require_scheduler = __commonJS((exports, module) => {
-  init_scheduler_development();
+  var scheduler_development = __toESM(require_scheduler_development(), 1);
   if (false) {
   } else {
-    module.exports = exports_scheduler_development;
+    module.exports = scheduler_development;
   }
 });
 
 // node_modules/react-dom/cjs/react-dom.development.js
-var exports_react_dom_development = {};
-__export(exports_react_dom_development, {
-  version: () => {
-    {
-      return $version2;
-    }
-  },
-  unstable_renderSubtreeIntoContainer: () => {
-    {
-      return $unstable_renderSubtreeIntoContainer;
-    }
-  },
-  unstable_batchedUpdates: () => {
-    {
-      return $unstable_batchedUpdates;
-    }
-  },
-  unmountComponentAtNode: () => {
-    {
-      return $unmountComponentAtNode;
-    }
-  },
-  render: () => {
-    {
-      return $render;
-    }
-  },
-  hydrateRoot: () => {
-    {
-      return $hydrateRoot;
-    }
-  },
-  hydrate: () => {
-    {
-      return $hydrate;
-    }
-  },
-  flushSync: () => {
-    {
-      return $flushSync;
-    }
-  },
-  findDOMNode: () => {
-    {
-      return $findDOMNode;
-    }
-  },
-  createRoot: () => {
-    {
-      return $createRoot;
-    }
-  },
-  createPortal: () => {
-    {
-      return $createPortal;
-    }
-  },
-  __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: () => {
-    {
-      return $__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED2;
-    }
-  }
-});
-var $__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED2, $createPortal, $createRoot, $findDOMNode, $flushSync, $hydrate, $hydrateRoot, $render, $unmountComponentAtNode, $unstable_batchedUpdates, $unstable_renderSubtreeIntoContainer, $version2;
-var init_react_dom_development = __esm(() => {
+var require_react_dom_development = __commonJS((exports) => {
   var React = __toESM(require_react(), 1);
   var Scheduler = __toESM(require_scheduler(), 1);
   if (true) {
@@ -22907,18 +22565,18 @@ var init_react_dom_development = __esm(() => {
           }
         }
       }
-      $__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED2 = Internals;
-      $createPortal = createPortal$1;
-      $createRoot = createRoot$1;
-      $findDOMNode = findDOMNode;
-      $flushSync = flushSync$1;
-      $hydrate = hydrate;
-      $hydrateRoot = hydrateRoot$1;
-      $render = render;
-      $unmountComponentAtNode = unmountComponentAtNode;
-      $unstable_batchedUpdates = batchedUpdates$1;
-      $unstable_renderSubtreeIntoContainer = renderSubtreeIntoContainer;
-      $version2 = ReactVersion;
+      exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = Internals;
+      exports.createPortal = createPortal$1;
+      exports.createRoot = createRoot$1;
+      exports.findDOMNode = findDOMNode;
+      exports.flushSync = flushSync$1;
+      exports.hydrate = hydrate;
+      exports.hydrateRoot = hydrateRoot$1;
+      exports.render = render;
+      exports.unmountComponentAtNode = unmountComponentAtNode;
+      exports.unstable_batchedUpdates = batchedUpdates$1;
+      exports.unstable_renderSubtreeIntoContainer = renderSubtreeIntoContainer;
+      exports.version = ReactVersion;
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
         __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error);
       }
@@ -22928,11 +22586,37 @@ var init_react_dom_development = __esm(() => {
 
 // node_modules/react-dom/index.js
 var require_react_dom = __commonJS((exports, module) => {
-  init_react_dom_development();
+  var react_dom_development = __toESM(require_react_dom_development(), 1);
   if (false) {
   } else {
-    module.exports = exports_react_dom_development;
+    module.exports = react_dom_development;
   }
+});
+
+// node_modules/react-dom/client.js
+var require_client = __commonJS((exports) => {
+  var m = __toESM(require_react_dom(), 1);
+  if (false) {
+  } else {
+    i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    exports.createRoot = function(c, o) {
+      i.usingClientEntryPoint = true;
+      try {
+        return m.createRoot(c, o);
+      } finally {
+        i.usingClientEntryPoint = false;
+      }
+    };
+    exports.hydrateRoot = function(c, h, o) {
+      i.usingClientEntryPoint = true;
+      try {
+        return m.hydrateRoot(c, h, o);
+      } finally {
+        i.usingClientEntryPoint = false;
+      }
+    };
+  }
+  var i;
 });
 
 // node_modules/is-buffer/index.js
@@ -23037,151 +22721,7 @@ var require_extend = __commonJS((exports, module) => {
 });
 
 // node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js
-var exports_react_is_development = {};
-__export(exports_react_is_development, {
-  typeOf: () => {
-    {
-      return $typeOf;
-    }
-  },
-  isValidElementType: () => {
-    {
-      return $isValidElementType;
-    }
-  },
-  isSuspense: () => {
-    {
-      return $isSuspense;
-    }
-  },
-  isStrictMode: () => {
-    {
-      return $isStrictMode;
-    }
-  },
-  isProfiler: () => {
-    {
-      return $isProfiler;
-    }
-  },
-  isPortal: () => {
-    {
-      return $isPortal;
-    }
-  },
-  isMemo: () => {
-    {
-      return $isMemo;
-    }
-  },
-  isLazy: () => {
-    {
-      return $isLazy;
-    }
-  },
-  isFragment: () => {
-    {
-      return $isFragment;
-    }
-  },
-  isForwardRef: () => {
-    {
-      return $isForwardRef;
-    }
-  },
-  isElement: () => {
-    {
-      return $isElement;
-    }
-  },
-  isContextProvider: () => {
-    {
-      return $isContextProvider;
-    }
-  },
-  isContextConsumer: () => {
-    {
-      return $isContextConsumer;
-    }
-  },
-  isConcurrentMode: () => {
-    {
-      return $isConcurrentMode;
-    }
-  },
-  isAsyncMode: () => {
-    {
-      return $isAsyncMode;
-    }
-  },
-  Suspense: () => {
-    {
-      return $Suspense2;
-    }
-  },
-  StrictMode: () => {
-    {
-      return $StrictMode2;
-    }
-  },
-  Profiler: () => {
-    {
-      return $Profiler2;
-    }
-  },
-  Portal: () => {
-    {
-      return $Portal;
-    }
-  },
-  Memo: () => {
-    {
-      return $Memo;
-    }
-  },
-  Lazy: () => {
-    {
-      return $Lazy;
-    }
-  },
-  Fragment: () => {
-    {
-      return $Fragment2;
-    }
-  },
-  ForwardRef: () => {
-    {
-      return $ForwardRef;
-    }
-  },
-  Element: () => {
-    {
-      return $Element;
-    }
-  },
-  ContextProvider: () => {
-    {
-      return $ContextProvider;
-    }
-  },
-  ContextConsumer: () => {
-    {
-      return $ContextConsumer;
-    }
-  },
-  ConcurrentMode: () => {
-    {
-      return $ConcurrentMode;
-    }
-  },
-  AsyncMode: () => {
-    {
-      return $AsyncMode;
-    }
-  }
-});
-var $AsyncMode, $ConcurrentMode, $ContextConsumer, $ContextProvider, $Element, $ForwardRef, $Fragment2, $Lazy, $Memo, $Portal, $Profiler2, $StrictMode2, $Suspense2, $isAsyncMode, $isConcurrentMode, $isContextConsumer, $isContextProvider, $isElement, $isForwardRef, $isFragment, $isLazy, $isMemo, $isPortal, $isProfiler, $isStrictMode, $isSuspense, $isValidElementType, $typeOf;
-var init_react_is_development = __esm(() => {
+var require_react_is_development = __commonJS((exports) => {
   if (true) {
     (function() {
       var hasSymbol = typeof Symbol === "function" && Symbol.for;
@@ -23298,44 +22838,44 @@ var init_react_is_development = __esm(() => {
       function isSuspense(object) {
         return typeOf(object) === REACT_SUSPENSE_TYPE;
       }
-      $AsyncMode = AsyncMode;
-      $ConcurrentMode = ConcurrentMode;
-      $ContextConsumer = ContextConsumer;
-      $ContextProvider = ContextProvider;
-      $Element = Element;
-      $ForwardRef = ForwardRef;
-      $Fragment2 = Fragment;
-      $Lazy = Lazy;
-      $Memo = Memo;
-      $Portal = Portal;
-      $Profiler2 = Profiler;
-      $StrictMode2 = StrictMode;
-      $Suspense2 = Suspense;
-      $isAsyncMode = isAsyncMode;
-      $isConcurrentMode = isConcurrentMode;
-      $isContextConsumer = isContextConsumer;
-      $isContextProvider = isContextProvider;
-      $isElement = isElement;
-      $isForwardRef = isForwardRef;
-      $isFragment = isFragment;
-      $isLazy = isLazy;
-      $isMemo = isMemo;
-      $isPortal = isPortal;
-      $isProfiler = isProfiler;
-      $isStrictMode = isStrictMode;
-      $isSuspense = isSuspense;
-      $isValidElementType = isValidElementType;
-      $typeOf = typeOf;
+      exports.AsyncMode = AsyncMode;
+      exports.ConcurrentMode = ConcurrentMode;
+      exports.ContextConsumer = ContextConsumer;
+      exports.ContextProvider = ContextProvider;
+      exports.Element = Element;
+      exports.ForwardRef = ForwardRef;
+      exports.Fragment = Fragment;
+      exports.Lazy = Lazy;
+      exports.Memo = Memo;
+      exports.Portal = Portal;
+      exports.Profiler = Profiler;
+      exports.StrictMode = StrictMode;
+      exports.Suspense = Suspense;
+      exports.isAsyncMode = isAsyncMode;
+      exports.isConcurrentMode = isConcurrentMode;
+      exports.isContextConsumer = isContextConsumer;
+      exports.isContextProvider = isContextProvider;
+      exports.isElement = isElement;
+      exports.isForwardRef = isForwardRef;
+      exports.isFragment = isFragment;
+      exports.isLazy = isLazy;
+      exports.isMemo = isMemo;
+      exports.isPortal = isPortal;
+      exports.isProfiler = isProfiler;
+      exports.isStrictMode = isStrictMode;
+      exports.isSuspense = isSuspense;
+      exports.isValidElementType = isValidElementType;
+      exports.typeOf = typeOf;
     })();
   }
 });
 
 // node_modules/prop-types/node_modules/react-is/index.js
 var require_react_is = __commonJS((exports, module) => {
-  init_react_is_development();
+  var react_is_development = __toESM(require_react_is_development(), 1);
   if (false) {
   } else {
-    module.exports = exports_react_is_development;
+    module.exports = react_is_development;
   }
 });
 
@@ -23910,151 +23450,7 @@ var require_prop_types = __commonJS((exports, module) => {
 });
 
 // node_modules/react-is/cjs/react-is.development.js
-var exports_react_is_development2 = {};
-__export(exports_react_is_development2, {
-  typeOf: () => {
-    {
-      return $typeOf2;
-    }
-  },
-  isValidElementType: () => {
-    {
-      return $isValidElementType2;
-    }
-  },
-  isSuspenseList: () => {
-    {
-      return $isSuspenseList;
-    }
-  },
-  isSuspense: () => {
-    {
-      return $isSuspense2;
-    }
-  },
-  isStrictMode: () => {
-    {
-      return $isStrictMode2;
-    }
-  },
-  isProfiler: () => {
-    {
-      return $isProfiler2;
-    }
-  },
-  isPortal: () => {
-    {
-      return $isPortal2;
-    }
-  },
-  isMemo: () => {
-    {
-      return $isMemo2;
-    }
-  },
-  isLazy: () => {
-    {
-      return $isLazy2;
-    }
-  },
-  isFragment: () => {
-    {
-      return $isFragment2;
-    }
-  },
-  isForwardRef: () => {
-    {
-      return $isForwardRef2;
-    }
-  },
-  isElement: () => {
-    {
-      return $isElement2;
-    }
-  },
-  isContextProvider: () => {
-    {
-      return $isContextProvider2;
-    }
-  },
-  isContextConsumer: () => {
-    {
-      return $isContextConsumer2;
-    }
-  },
-  isConcurrentMode: () => {
-    {
-      return $isConcurrentMode2;
-    }
-  },
-  isAsyncMode: () => {
-    {
-      return $isAsyncMode2;
-    }
-  },
-  SuspenseList: () => {
-    {
-      return $SuspenseList;
-    }
-  },
-  Suspense: () => {
-    {
-      return $Suspense3;
-    }
-  },
-  StrictMode: () => {
-    {
-      return $StrictMode3;
-    }
-  },
-  Profiler: () => {
-    {
-      return $Profiler3;
-    }
-  },
-  Portal: () => {
-    {
-      return $Portal2;
-    }
-  },
-  Memo: () => {
-    {
-      return $Memo2;
-    }
-  },
-  Lazy: () => {
-    {
-      return $Lazy2;
-    }
-  },
-  Fragment: () => {
-    {
-      return $Fragment3;
-    }
-  },
-  ForwardRef: () => {
-    {
-      return $ForwardRef2;
-    }
-  },
-  Element: () => {
-    {
-      return $Element2;
-    }
-  },
-  ContextProvider: () => {
-    {
-      return $ContextProvider2;
-    }
-  },
-  ContextConsumer: () => {
-    {
-      return $ContextConsumer2;
-    }
-  }
-});
-var $ContextConsumer2, $ContextProvider2, $Element2, $ForwardRef2, $Fragment3, $Lazy2, $Memo2, $Portal2, $Profiler3, $StrictMode3, $Suspense3, $SuspenseList, $isAsyncMode2, $isConcurrentMode2, $isContextConsumer2, $isContextProvider2, $isElement2, $isForwardRef2, $isFragment2, $isLazy2, $isMemo2, $isPortal2, $isProfiler2, $isStrictMode2, $isSuspense2, $isSuspenseList, $isValidElementType2, $typeOf2;
-var init_react_is_development2 = __esm(() => {
+var require_react_is_development2 = __commonJS((exports) => {
   if (true) {
     (function() {
       var REACT_ELEMENT_TYPE = Symbol.for("react.element");
@@ -24195,44 +23591,44 @@ var init_react_is_development2 = __esm(() => {
       function isSuspenseList(object) {
         return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
       }
-      $ContextConsumer2 = ContextConsumer;
-      $ContextProvider2 = ContextProvider;
-      $Element2 = Element;
-      $ForwardRef2 = ForwardRef;
-      $Fragment3 = Fragment;
-      $Lazy2 = Lazy;
-      $Memo2 = Memo;
-      $Portal2 = Portal;
-      $Profiler3 = Profiler;
-      $StrictMode3 = StrictMode;
-      $Suspense3 = Suspense;
-      $SuspenseList = SuspenseList;
-      $isAsyncMode2 = isAsyncMode;
-      $isConcurrentMode2 = isConcurrentMode;
-      $isContextConsumer2 = isContextConsumer;
-      $isContextProvider2 = isContextProvider;
-      $isElement2 = isElement;
-      $isForwardRef2 = isForwardRef;
-      $isFragment2 = isFragment;
-      $isLazy2 = isLazy;
-      $isMemo2 = isMemo;
-      $isPortal2 = isPortal;
-      $isProfiler2 = isProfiler;
-      $isStrictMode2 = isStrictMode;
-      $isSuspense2 = isSuspense;
-      $isSuspenseList = isSuspenseList;
-      $isValidElementType2 = isValidElementType;
-      $typeOf2 = typeOf;
+      exports.ContextConsumer = ContextConsumer;
+      exports.ContextProvider = ContextProvider;
+      exports.Element = Element;
+      exports.ForwardRef = ForwardRef;
+      exports.Fragment = Fragment;
+      exports.Lazy = Lazy;
+      exports.Memo = Memo;
+      exports.Portal = Portal;
+      exports.Profiler = Profiler;
+      exports.StrictMode = StrictMode;
+      exports.Suspense = Suspense;
+      exports.SuspenseList = SuspenseList;
+      exports.isAsyncMode = isAsyncMode;
+      exports.isConcurrentMode = isConcurrentMode;
+      exports.isContextConsumer = isContextConsumer;
+      exports.isContextProvider = isContextProvider;
+      exports.isElement = isElement;
+      exports.isForwardRef = isForwardRef;
+      exports.isFragment = isFragment;
+      exports.isLazy = isLazy;
+      exports.isMemo = isMemo;
+      exports.isPortal = isPortal;
+      exports.isProfiler = isProfiler;
+      exports.isStrictMode = isStrictMode;
+      exports.isSuspense = isSuspense;
+      exports.isSuspenseList = isSuspenseList;
+      exports.isValidElementType = isValidElementType;
+      exports.typeOf = typeOf;
     })();
   }
 });
 
 // node_modules/react-is/index.js
 var require_react_is2 = __commonJS((exports, module) => {
-  init_react_is_development2();
+  var react_is_development = __toESM(require_react_is_development2(), 1);
   if (false) {
   } else {
-    module.exports = exports_react_is_development2;
+    module.exports = react_is_development;
   }
 });
 
@@ -24300,13 +23696,13 @@ var require_inline_style_parser = __commonJS((exports, module) => {
       }
     }
     function match(re) {
-      var m2 = re.exec(style);
-      if (!m2)
+      var m = re.exec(style);
+      if (!m)
         return;
-      var str = m2[0];
+      var str = m[0];
       updatePosition(str);
       style = style.slice(str.length);
-      return m2;
+      return m;
     }
     function whitespace2() {
       match(WHITESPACE_REGEX);
@@ -24408,22 +23804,8 @@ var require_style_to_object = __commonJS((exports, module) => {
 });
 
 // node_modules/react/cjs/react-jsx-dev-runtime.development.js
-var exports_react_jsx_dev_runtime_development = {};
-__export(exports_react_jsx_dev_runtime_development, {
-  jsxDEV: () => {
-    {
-      return $jsxDEV;
-    }
-  },
-  Fragment: () => {
-    {
-      return $Fragment4;
-    }
-  }
-});
-var $Fragment4, $jsxDEV;
-var init_react_jsx_dev_runtime_development = __esm(() => {
-  var React4 = __toESM(require_react(), 1);
+var require_react_jsx_dev_runtime_development = __commonJS((exports) => {
+  var React3 = __toESM(require_react(), 1);
   if (true) {
     (function() {
       var REACT_ELEMENT_TYPE = Symbol.for("react.element");
@@ -24451,7 +23833,7 @@ var init_react_jsx_dev_runtime_development = __esm(() => {
         }
         return null;
       }
-      var ReactSharedInternals = React4.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+      var ReactSharedInternals = React3.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
       function error(format) {
         {
           {
@@ -24778,8 +24160,8 @@ var init_react_jsx_dev_runtime_development = __esm(() => {
           return describeNativeComponentFrame(fn, false);
         }
       }
-      function shouldConstruct(Component2) {
-        var prototype = Component2.prototype;
+      function shouldConstruct(Component) {
+        var prototype = Component.prototype;
         return !!(prototype && prototype.isReactComponent);
       }
       function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
@@ -25268,18 +24650,18 @@ var init_react_jsx_dev_runtime_development = __esm(() => {
         }
       }
       var jsxDEV$1 = jsxWithValidation;
-      $Fragment4 = REACT_FRAGMENT_TYPE;
-      $jsxDEV = jsxDEV$1;
+      exports.Fragment = REACT_FRAGMENT_TYPE;
+      exports.jsxDEV = jsxDEV$1;
     })();
   }
 });
 
 // node_modules/react/jsx-dev-runtime.js
 var require_jsx_dev_runtime = __commonJS((exports, module) => {
-  init_react_jsx_dev_runtime_development();
+  var react_jsx_dev_runtime_development = __toESM(require_react_jsx_dev_runtime_development(), 1);
   if (false) {
   } else {
-    module.exports = exports_react_jsx_dev_runtime_development;
+    module.exports = react_jsx_dev_runtime_development;
   }
 });
 
@@ -25377,7 +24759,7 @@ __export(exports_web_vitals, {
     }
   }
 });
-var e, n, t, r, i, a, o, c, u, f, s, d, l, p, v, m2, h, g, y, T, E, C, L, b, w, S, A, I, P, F, M, k, D, x, B, R, H, N, O, q, j, _, z, G, J, K, Q, U, V, W, X, Y, Z;
+var e, n, t, r, i, a, o, c, u, f, s, d, l, p, v, m, h, g, y, T, E, C, L, b, w, S, A, I, P, F, M, k, D, x, B, R, H, N, O, q, j, _, z, G, J, K, Q, U, V, W, X, Y, Z;
 var init_web_vitals = __esm(() => {
   a = -1;
   o = function(e2) {
@@ -25436,12 +24818,12 @@ var init_web_vitals = __esm(() => {
       n2 || (e2(t2), n2 = true);
     };
   };
-  m2 = -1;
+  m = -1;
   h = function() {
     return document.visibilityState !== "hidden" || document.prerendering ? 1 / 0 : 0;
   };
   g = function(e2) {
-    document.visibilityState === "hidden" && m2 > -1 && (m2 = e2.type === "visibilitychange" ? e2.timeStamp : 0, T());
+    document.visibilityState === "hidden" && m > -1 && (m = e2.type === "visibilitychange" ? e2.timeStamp : 0, T());
   };
   y = function() {
     addEventListener("visibilitychange", g, true), addEventListener("prerenderingchange", g, true);
@@ -25450,12 +24832,12 @@ var init_web_vitals = __esm(() => {
     removeEventListener("visibilitychange", g, true), removeEventListener("prerenderingchange", g, true);
   };
   E = function() {
-    return m2 < 0 && (m2 = h(), y(), o(function() {
+    return m < 0 && (m = h(), y(), o(function() {
       setTimeout(function() {
-        m2 = h(), y();
+        m = h(), y();
       }, 0);
     })), { get firstHiddenTime() {
-      return m2;
+      return m;
     } };
   };
   C = function(e2) {
@@ -25536,11 +24918,11 @@ var init_web_vitals = __esm(() => {
     i2 = i2 || {}, C(function() {
       var a2, c2 = E(), u2 = f("FID"), l2 = function(e2) {
         e2.startTime < c2.firstHiddenTime && (u2.value = e2.processingStart - e2.startTime, u2.entries.push(e2), a2(true));
-      }, m3 = function(e2) {
+      }, m2 = function(e2) {
         e2.forEach(l2);
-      }, h2 = s("first-input", m3);
+      }, h2 = s("first-input", m2);
       a2 = d(t2, u2, D, i2.reportAllChanges), h2 && p(v(function() {
-        m3(h2.takeRecords()), h2.disconnect();
+        m2(h2.takeRecords()), h2.disconnect();
       })), h2 && o(function() {
         var o2;
         u2 = f("FID"), a2 = d(t2, u2, D, i2.reportAllChanges), r = [], n = -1, e = null, k(addEventListener), o2 = l2, r.push(o2), F();
@@ -25615,12 +24997,12 @@ var init_web_vitals = __esm(() => {
       }, c2 = s("largest-contentful-paint", a2);
       if (c2) {
         t2 = d(e2, i2, U, n2.reportAllChanges);
-        var m3 = v(function() {
+        var m2 = v(function() {
           V[i2.id] || (a2(c2.takeRecords()), c2.disconnect(), V[i2.id] = true, t2(true));
         });
         ["keydown", "click"].forEach(function(e3) {
-          addEventListener(e3, m3, true);
-        }), p(m3), o(function(r3) {
+          addEventListener(e3, m2, true);
+        }), p(m2), o(function(r3) {
           i2 = f("LCP"), t2 = d(e2, i2, U, n2.reportAllChanges), l(function() {
             i2.value = performance.now() - r3.timeStamp, V[i2.id] = true, t2(true);
           });
@@ -25654,33 +25036,8 @@ var init_web_vitals = __esm(() => {
 });
 
 // src/index.tsx
-var React5 = __toESM(require_react(), 1);
-
-// node_modules/react-dom/client.js
-var m = __toESM(require_react_dom(), 1);
-var $createRoot2;
-var $hydrateRoot2;
-if (false) {
-} else {
-  i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-  $createRoot2 = function(c, o) {
-    i.usingClientEntryPoint = true;
-    try {
-      return m.createRoot(c, o);
-    } finally {
-      i.usingClientEntryPoint = false;
-    }
-  };
-  $hydrateRoot2 = function(c, h, o) {
-    i.usingClientEntryPoint = true;
-    try {
-      return m.hydrateRoot(c, h, o);
-    } finally {
-      i.usingClientEntryPoint = false;
-    }
-  };
-}
-var i;
+var React3 = __toESM(require_react(), 1);
+var ReactDOM = __toESM(require_client(), 1);
 
 // src/App.jsx
 var import_react3 = __toESM(require_react(), 1);
@@ -25929,14 +25286,14 @@ var flankingWhitespace = function(node, options) {
   return { leading: edges.leading, trailing: edges.trailing };
 };
 var edgeWhitespace = function(string) {
-  var m2 = string.match(/^(([ \t\r\n]*)(\s*))(?:(?=\S)[\s\S]*\S)?((\s*?)([ \t\r\n]*))$/);
+  var m = string.match(/^(([ \t\r\n]*)(\s*))(?:(?=\S)[\s\S]*\S)?((\s*?)([ \t\r\n]*))$/);
   return {
-    leading: m2[1],
-    leadingAscii: m2[2],
-    leadingNonAscii: m2[3],
-    trailing: m2[4],
-    trailingNonAscii: m2[5],
-    trailingAscii: m2[6]
+    leading: m[1],
+    leadingAscii: m[2],
+    leadingNonAscii: m[3],
+    trailing: m[4],
+    trailingNonAscii: m[5],
+    trailingAscii: m[6]
   };
 };
 var isFlankedByWhitespace = function(side, node, options) {
@@ -36657,21 +36014,26 @@ var App = function() {
   const [thread, setThread] = import_react3.useState();
   var turndownService = new turndown_browser_es_default;
   import_react3.useEffect(() => {
-    try {
-      let parsedUrl = new URL(url);
-      const id = url.split("/").pop();
-      let apiContextUrl = "https://" + parsedUrl.host + "/api/v1/statuses/" + id + "/context";
-      fetch(apiContextUrl).then((r) => r.json()).then((t) => {
-        setThread(t);
-        const snippet = t.ancestors.concat(t.descendants).flatMap((post) => {
+    const fetchData = async () => {
+      try {
+        let parsedUrl = new URL(url);
+        const user = url.split("/").slice(-2, -1)[0].slice(1);
+        const id = url.split("/").pop();
+        let apiContextUrl = "https://" + parsedUrl.host + "/api/v1/statuses/" + id + "/context";
+        let apiStatusUrl = "https://" + parsedUrl.host + "/api/v1/statuses/" + id;
+        const contextInfo = await fetch(apiContextUrl).then((r) => r.json());
+        const statusInfo = await fetch(apiStatusUrl).then((r) => r.json());
+        setThread(contextInfo);
+        const snippet = contextInfo.ancestors.concat([statusInfo]).concat(contextInfo.descendants).filter((post) => post.account.username == user).flatMap((post) => {
           const medias = post.media_attachments.map((media) => "![](" + media.url + ")\n");
           return [turndownService.turndown(post.content)].concat(medias);
         }).join("\n\n");
         setMarkdown(snippet);
-      });
-    } catch (err) {
-      console.log(err);
-    }
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
   }, [url]);
   return jsx_dev_runtime.jsxDEV("div", {
     className: "App",
@@ -36748,8 +36110,8 @@ var reportWebVitals_default = reportWebVitals;
 
 // src/index.tsx
 var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
-var root4 = $createRoot2(document.getElementById("root"));
-root4.render(jsx_dev_runtime2.jsxDEV(React5.StrictMode, {
+var root4 = ReactDOM.createRoot(document.getElementById("root"));
+root4.render(jsx_dev_runtime2.jsxDEV(React3.StrictMode, {
   children: jsx_dev_runtime2.jsxDEV(App_default, {}, undefined, false, undefined, this)
 }, undefined, false, undefined, this));
 reportWebVitals_default();
