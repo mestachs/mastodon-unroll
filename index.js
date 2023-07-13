@@ -36008,8 +36008,9 @@ function remarkGfm(options = {}) {
 // src/App.jsx
 var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
 var App = function() {
+  const params = new URLSearchParams(window.location.search);
   const [currentTab, setCurrentTab] = import_react3.useState(0);
-  const [url, setUrl] = import_react3.useState("https://mastodon.green/@mestachs/110525572477536095");
+  const [url, setUrl] = import_react3.useState(params.get("q") || "https://mastodon.green/@mestachs/110525572477536095");
   const [markdown, setMarkdown] = import_react3.useState("");
   const [thread, setThread] = import_react3.useState();
   var turndownService = new turndown_browser_es_default;
@@ -36023,8 +36024,9 @@ var App = function() {
         let apiStatusUrl = "https://" + parsedUrl.host + "/api/v1/statuses/" + id;
         const contextInfo = await fetch(apiContextUrl).then((r) => r.json());
         const statusInfo = await fetch(apiStatusUrl).then((r) => r.json());
-        setThread(contextInfo);
-        const snippet = contextInfo.ancestors.concat([statusInfo]).concat(contextInfo.descendants).filter((post) => post.account.username == user).flatMap((post) => {
+        const threads = contextInfo.ancestors.concat([statusInfo]).concat(contextInfo.descendants);
+        setThread(threads);
+        const snippet = threads.filter((post) => post.account.acct == user).flatMap((post) => {
           const medias = post.media_attachments.map((media) => "![](" + media.url + ")\n");
           return [turndownService.turndown(post.content)].concat(medias);
         }).join("\n\n");
