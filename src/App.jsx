@@ -15,31 +15,38 @@ function App() {
   var turndownService = new TurndownService();
 
   useEffect(() => {
-    try {
-      let parsedUrl = new URL(url);
-      const id = url.split("/").pop();
-      let apiContextUrl =
-        "https://" + parsedUrl.host + "/api/v1/statuses/" + id + "/context";
+    const fetchData = async () => {
+      try {
+        let parsedUrl = new URL(url);
+        const user = url.split("/").slice(-2, -1)[0].slice(1);
+        const id = url.split("/").pop();
+        let apiContextUrl =
+          "https://" + parsedUrl.host + "/api/v1/statuses/" + id + "/context";
+        let apiStatusUrl =
+          "https://" + parsedUrl.host + "/api/v1/statuses/" + id;
 
-      fetch(apiContextUrl)
-        .then((r) => r.json())
-        .then((t) => {
-          setThread(t);
-          const snippet = t.ancestors
-            .concat(t.descendants)
-            .flatMap((post) => {
-              const medias = post.media_attachments.map(
-                (media) => "![](" + media.url + ")\n"
-              );
+        const contextInfo = await fetch(apiContextUrl).then((r) => r.json());
+        const statusInfo = await fetch(apiStatusUrl).then((r) => r.json());
 
-              return [turndownService.turndown(post.content)].concat(medias);
-            })
-            .join("\n\n");
-          setMarkdown(snippet);
-        });
-    } catch (err) {
-      console.log(err);
-    }
+        setThread(contextInfo);
+        const snippet = contextInfo.ancestors
+          .concat([statusInfo])
+          .concat(contextInfo.descendants)
+          .filter((post) => post.account.username == user)
+          .flatMap((post) => {
+            const medias = post.media_attachments.map(
+              (media) => "![](" + media.url + ")\n"
+            );
+
+            return [turndownService.turndown(post.content)].concat(medias);
+          })
+          .join("\n\n");
+        setMarkdown(snippet);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
   }, [url]);
   return (
     <div className="App" role="main">
