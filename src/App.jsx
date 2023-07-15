@@ -5,9 +5,11 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 function App() {
-  const [currentTab, setCurrentTab] = useState(0);
+  const params = new URLSearchParams(window.location.search);
+
+  const [currentTab, setCurrentTab] = useState(2);
   const [url, setUrl] = useState(
-    "https://mastodon.green/@mestachs/110525572477536095"
+    params.get("q") || "https://mastodon.green/@mestachs/110525572477536095"
   );
   const [markdown, setMarkdown] = useState("");
   const [thread, setThread] = useState();
@@ -27,12 +29,13 @@ function App() {
 
         const contextInfo = await fetch(apiContextUrl).then((r) => r.json());
         const statusInfo = await fetch(apiStatusUrl).then((r) => r.json());
-
-        setThread(contextInfo);
-        const snippet = contextInfo.ancestors
+        const threads = contextInfo.ancestors
           .concat([statusInfo])
-          .concat(contextInfo.descendants)
-          .filter((post) => post.account.username == user)
+          .concat(contextInfo.descendants);
+
+        setThread(threads);
+        const snippet = threads
+          .filter((post) => post.account.acct == user)
           .flatMap((post) => {
             const medias = post.media_attachments.map(
               (media) => "![](" + media.url + ")\n"
